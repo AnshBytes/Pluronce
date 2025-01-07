@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Join Us</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <style>
+            /* Preloader */
+            .preloader {
+                background-color: #f7f7f7;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .preloader-circle {
+                width: 100px;
+                height: 100px;
+                border: 5px solid transparent;
+                border-top-color: #f04506;
+                border-radius: 50%;
+                animation: spin 1.5s linear infinite;
+            }
+
+            .preloader-img img {
+                max-width: 55px;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            /* Hover Effect */
+            .trans {
+                max-width: 500px;
+                transition: transform 0.2s;
+            }
+
+            .trans:hover {
+                transform: scale(0.9);
+            }
+
+            /* Fade-in Animation */
+            .fadeInzoom {
+                animation: fadeInzoom 2s;
+            }
+
+            @keyframes fadeInzoom {
+                0% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            /* Responsive Navbar */
+            @media (max-width: 768px) {
+                .navbar-brand img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .navbar-nav .nav-link {
+                    font-size: 0.9rem;
+                }
+            }
+               /* General Styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+.heading {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subheading {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.form-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button */
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+    }
+}
+            
+        </style>
+        
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader-active" class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-circle"></div>
+                
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="background">
+            <img class="vh-100 vw-100 position-fixed" style="filter: brightness(20%);" src="images/background.jpg" alt="Background Image">
+        </div>
+        <div class="content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Pluronce Logo" class="rounded-circle" width="100" height="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="joinus.html">Join Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content -->
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Form Section -->
+                        <div class="position-relative d-flex flex-column align-items-center justify-content-center p-4 profile-section">
+                            <!-- Heading Section -->
+                            <div class="text-center w-100 mb-4">
+                                <h1 class="text-primary h1 heading">
+                                    We'd Love to Hear From You!
+                                </h1>
+                                <p class="text-muted subheading">
+                                    At Pluronce, we welcome innovators, dreamers, and collaborators. Are you interested in being part of our journey? 
+                                    <br /> Fill out the application form to join Pluronce.
+                                </p>
+                            </div>
+            
+                            <!-- Form Section -->
+                            <div class="card shadow p-4 w-100 form-card">
+                                <form action="submit.php" method="POST">
+                                    @csrf
+                                    <!-- Name Input -->
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="text" 
+                                            id="name" 
+                                            name="name" 
+                                            placeholder="Enter your name..." 
+                                            required 
+                                        />
+                                    </div>
+            
+                                    <!-- Email Input -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input 
+                                            class="form-control" 
+                                            type="email" 
+                                            id="email" 
+                                            name="email" 
+                                            placeholder="Enter your email..." 
+                                            required 
+                                        />
+                                    </div>
+            
+                                    <!-- Qualification Dropdown -->
+                                    <div class="mb-3">
+                                        <label for="qualification" class="form-label">Your Qualification</label>
+                                        <select 
+                                            class="form-select" 
+                                            id="qualification" 
+                                            name="qualification" 
+                                            required
+                                        >
+                                            <option value="" disabled selected>Select your current qualification</option>
+                                            <option value="Vocational Qualifications">Vocational Qualifications</option>
+                                            <option value="Professional Qualifications">Professional Qualifications</option>
+                                            <option value="Certificate">Certificate</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="Doctorate">Doctorate</option>
+                                            <option value="Associate degree">Associate degree</option>
+                                            <option value="Master's degree">Master's degree</option>
+                                            <option value="Bachelor's degree">Bachelor's degree</option>
+                                            <option value="Intermediate">Intermediate</option>
+                                            <option value="High School">High School</option>
+                                        </select>
+                                    </div>
+            
+                                    <!-- Contribution Stream Dropdown -->
+                                    <div class="mb-3">
+                                        <label for="stream" class="form-label">Stream of Contribution</label>
+                                        <select 
+                                            class="form-select" 
+                                            id="stream" 
+                                            name="stream" 
+                                            required
+                                        >
+                                            <option value="" disabled selected>In which stream do you want to contribute?</option>
+                                            <option value="Material Science">Material Science</option>
+                                            <option value="Physics">Physics</option>
+                                            <option value="Astrophysics">Astrophysics</option>
+                                            <option value="Quantum Physics">Quantum Physics</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="AI/ML">AI/ML</option>
+                                        </select>
+                                    </div>
+            
+                                    <!-- Submit Button -->
+                                    <div class="d-flex justify-content-center">
+                                        <button 
+                                            type="submit" 
+                                            class="btn btn-primary w-50 submit-btn"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://kit.fontawesome.com/cb50b81f89.js" crossorigin="anonymous"></script>
+        <script src="{{url('js/ghost-typer.js')}}"></script>
+        <script>
+            window.onload = function () {
+                document.getElementById('preloader-active').style.display = 'none';
+            };
+        </script>
+      
+    </body>
+</html>

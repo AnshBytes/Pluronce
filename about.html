@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">"
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="https://demo.plantpot.works/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+        <style>
+            /* Preloader */
+            .preloader {
+                background-color: #f7f7f7;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .preloader-circle {
+                width: 100px;
+                height: 100px;
+                border: 5px solid transparent;
+                border-top-color: #f04506;
+                border-radius: 50%;
+                animation: spin 1.5s linear infinite;
+            }
+
+            .preloader-img img {
+                max-width: 55px;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            /* Hover Effect */
+            .trans {
+                max-width: 500px;
+                transition: transform 0.2s;
+            }
+
+            .trans:hover {
+                transform: scale(0.9);
+            }
+
+            /* Fade-in Animation */
+            .fadeInzoom {
+                animation: fadeInzoom 2s;
+            }
+
+            @keyframes fadeInzoom {
+                0% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+            /* Responsive Navbar */
+            @media (max-width: 768px) {
+                .navbar-brand img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .navbar-nav .nav-link {
+                    font-size: 0.9rem;
+                }
+            }
+
+            
+        </style>
+        @yield('style')
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader-active" class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-circle"></div>
+                
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="background">
+            <img class="vh-100 vw-100 position-fixed" style="filter: brightness(20%);" src="images/background.jpg" alt="Background Image">
+        </div>
+        <div class="content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Pluronce Logo" class="rounded-circle" width="100" height="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="research.html">Research</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="joinus.html">Join Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content -->
+            <div class="position-absolute d-flex flex-column align-items-center justify-content-center profile-section w-100">
+                <!-- Introduction Section -->
+                <div class="text-white text-center intro-section">
+                    Welcome to <strong class="text-primary">Pluronce</strong>, where innovation meets exploration and curiosity drives discovery. Founded with the vision of advancing humanity and unraveling the mysteries of the universe, Pluronce is a research-focused organization dedicated to pioneering fundamental breakthroughs in science and technology.
+                </div>
+                
+                <!-- Our Mission Section -->
+                <div class="text-white text-center section">
+                    <h1 class="text-warning">Our Mission</h1>
+                    <ul class="text-start mx-auto list">
+                        <li>To conduct <strong class="text-primary">groundbreaking fundamental research</strong> to deepen our understanding of the universe.</li>
+                        <li>To develop future technologies that empower humanity to thrive on Earth and beyond.</li>
+                        <li>To explore the cosmos to unlock its secrets and expand the horizons of human knowledge.</li>
+                    </ul>
+                </div>
+                
+                <!-- Why Pluronce Section -->
+                <div class="text-white text-center section">
+                    <h1 class="text-warning">Why Pluronce?</h1>
+                    <p>We believe that the future lies in bold ideas and fearless exploration. Pluronce is not just about innovation; it's about collaboration, curiosity, and commitment to building a better tomorrow. By bridging the gap between science and imagination, we strive to:</p>
+                    <ul class="text-start mx-auto list">
+                        <li>Inspire the next generation of explorers, researchers, and innovators.</li>
+                        <li>Create technologies that solve today’s challenges and anticipate tomorrow’s needs.</li>
+                        <li>Push the boundaries of what’s possible, guided by a spirit of inquiry and wonder.</li>
+                    </ul>
+                </div>
+                
+                <!-- What We Do Section -->
+                <div class="text-white text-center section">
+                    <h1 class="text-warning">What We Do</h1>
+                    <ul class="text-start mx-auto list">
+                        <li><strong class="text-primary">Research & Innovation:</strong> From quantum mechanics to sustainable technologies, we tackle the questions that shape humanity’s future.</li>
+                        <li><strong class="text-primary">Space Exploration:</strong> Studying the universe’s origins, exoplanet habitability, and the possibilities of interstellar travel.</li>
+                        <li><strong class="text-primary">Technological Advancements:</strong> Developing AI, renewable energy systems, and tools to propel space exploration forward.</li>
+                        <li><strong class="text-primary">Simulation Theory Analysis:</strong> Exploring whether our reality is a simulation and what it could mean for our existence.</li>
+                    </ul>
+                </div>
+                
+                <!-- Join Our Journey Section -->
+                <div class="text-white text-center section">
+                    <h1 class="text-warning">Join Our Journey</h1>
+                    <p>Pluronce is a global community of dreamers and doers, united by a shared passion for discovery. Whether you’re a scientist, innovator, or space enthusiast, there’s a place for you in our mission.</p>
+                    <p><strong class="text-primary">Together, we can redefine the future of humanity and the cosmos.</strong></p>
+                    <a class="btn btn-outline-light join-btn" href="joinus.html">Join Us</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://kit.fontawesome.com/cb50b81f89.js" crossorigin="anonymous"></script>
+        <script src="{{url('js/ghost-typer.js')}}"></script>
+        <script>
+            window.onload = function () {
+                document.getElementById('preloader-active').style.display = 'none';
+            };
+        </script>
+       
+    </body>
+</html>
