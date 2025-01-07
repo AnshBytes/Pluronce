@@ -220,7 +220,7 @@
             
                             <!-- Form Section -->
                             <div class="card shadow p-4 w-100 form-card">
-                                <form action="https://formspree.io/f/xbllpelo" method="POST">
+                                <form id="form" action="https://formspree.io/f/xbllpelo" method="POST">
                                   
                                     <!-- Name Input -->
                                     <div class="mb-3">
@@ -292,7 +292,7 @@
             
                                     <!-- Submit Button -->
                                     <div class="d-flex justify-content-center">
-                                        <button 
+                                        <button  onclick="box()"
                                             type="submit" 
                                             class="btn btn-primary w-50 submit-btn"
                                         >
@@ -318,6 +318,11 @@
             window.onload = function () {
                 document.getElementById('preloader-active').style.display = 'none';
             };
+
+            function box(){
+            alert("Success");
+            }
+            
         </script>
       
     </body>
