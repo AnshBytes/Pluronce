@@ -5,96 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pluronce</title>
         <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-        <link rel="stylesheet" href='css/bootstrap.css'>
+        <link rel="stylesheet" href='css/bootstrap.css'/>
         <link rel="stylesheet" href="https://demo.plantpot.works/assets/css/normalize.css">
         <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
-        <style>
-            /* Preloader */
-            .preloader {
-                background-color: #f7f7f7;
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 9999;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .preloader-circle {
-                width: 100px;
-                height: 100px;
-                border: 5px solid transparent;
-                border-top-color: #f04506;
-                border-radius: 50%;
-                animation: spin 1.5s linear infinite;
-            }
-
-            .preloader-img img {
-                max-width: 55px;
-            }
-
-            @keyframes spin {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-
-            /* Hover Effect */
-            .trans {
-                max-width: 500px;
-                transition: transform 0.2s;
-            }
-
-            .trans:hover {
-                transform: scale(0.9);
-            }
-
-            /* Fade-in Animation */
-            .fadeInzoom {
-                animation: fadeInzoom 2s;
-            }
-
-            @keyframes fadeInzoom {
-                0% {
-                    transform: scale(0.5);
-                    opacity: 0;
-                }
-                100% {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-
-            /* Responsive Navbar */
-            @media (max-width: 768px) {
-                .navbar-brand img {
-                    width: 80px;
-                    height: 80px;
-                }
-
-                .navbar-nav .nav-link {
-                    font-size: 0.9rem;
-                }
-            }
-            
-    @media only screen and (max-width: 500px) {
-        #con{
-            flex-direction:column;
-        }
-        .restagline{
-            margin:0 10%;
-        }
-    }
-
-            
-        </style>
-        
+        <link rel="stylesheet" href="css/custom.css"/>
+         
     </head>
     <body>
         <!-- Preloader -->
@@ -121,19 +36,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="research.html">Research</a>
+                                <a class="nav-link" href="#research">Research</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="joinus.html">Join Us</a>
+                                <a class="nav-link" href="#joinus">Join Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -141,33 +56,26 @@
             </nav>
 
             <!-- Content -->
-            <div id="con" class="position-absolute d-flex align-items-center justify-content-center profile-section w-100">
-                <!-- Image Section -->
-                <div class="d-flex justify-content-center w-50 w-md-50">
-                    <img class="fadeInzoom rounded-circle img-fluid" height="80%" width="80%" src="images/astronaut.png" alt="Astronaut representing exploration" />
-                </div>
-                
-                <!-- Text Section -->
-                <div class="text-white d-flex flex-column text-center w-100 mt-3 mt-md-0">
-                    <h1 class="fadeInzoom fw-bold restagline" style="font-size:5vw;">Let's Explore Beyond the Horizon of Space</h1>
-                    <p class="h5" id="plugin1" style="font-family:Ariel; height:20px;">
-                        Combining multidisciplinary research for holistic understanding.
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <a href="https://AnshBytes.github.io/Pluronce/images/Pluronce.pptx" download="Pluronce.pptx" class="fadeInzoom btn btn-outline-light px-4 py-2">Know More</a>
-                    </div>
-                </div>
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    
+            <div id="mainContent"></div>
             </div>
+            
+            </div>
+        
         </div>
 
         <script src="js/bootstrap.bundle.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://kit.fontawesome.com/cb50b81f89.js" crossorigin="anonymous"></script>
         <script src="js/ghost-typer.js"></script>
+        <script type="module" src="js/index.js"></script>
         <script>
             window.onload = function () {
                 document.getElementById('preloader-active').style.display = 'none';
             };
+            
             
         
              $("#plugin1").ghosttyper({

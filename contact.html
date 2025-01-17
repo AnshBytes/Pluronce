@@ -1,196 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="https://demo.plantpot.works/assets/css/normalize.css">
-        <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
-        <style>
-            /* Preloader */
-            .color{
-                color:#0FBBD9;
-                
-            }
-            .preloader {
-                background-color: #f7f7f7;
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 9999;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .preloader-circle {
-                width: 100px;
-                height: 100px;
-                border: 5px solid transparent;
-                border-top-color: #f04506;
-                border-radius: 50%;
-                animation: spin 1.5s linear infinite;
-            }
-
-            .preloader-img img {
-                max-width: 55px;
-            }
-
-            @keyframes spin {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
-
-            /* Hover Effect */
-            .trans {
-                max-width: 500px;
-                transition: transform 0.2s;
-            }
-
-            .trans:hover {
-                transform: scale(0.9);
-            }
-
-            /* Fade-in Animation */
-            .fadeInzoom {
-                animation: fadeInzoom 2s;
-            }
-
-            @keyframes fadeInzoom {
-                0% {
-                    transform: scale(0.5);
-                    opacity: 0;
-                }
-                100% {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-
-            /* Responsive Navbar */
-            @media (max-width: 768px) {
-                .navbar-brand img {
-                    width: 80px;
-                    height: 80px;
-                }
-
-                .navbar-nav .nav-link {
-                    font-size: 0.9rem;
-                }
-            }
-
-            
-        </style>
-    
-    </head>
-    <body>
-        <!-- Preloader -->
-        <div id="preloader-active" class="preloader">
-            <div class="preloader-inner">
-                <div class="preloader-circle"></div>
-                
-            </div>
-        </div>
-
-        <!-- Navbar -->
-        <div class="background">
-            <img class="vh-100 vw-100 position-fixed" style="filter: brightness(20%);" src="images/background.jpg" alt="Background Image">
-        </div>
-        <div class="content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Pluronce Logo" class="rounded-circle" width="100" height="100">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="research.html">Research</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="joinus.html">Join Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+  <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center text-white">
+                    <div class="mb-4">
+                        <h1 class="color">We'd Love to Hear From You!</h1>
+                        <p style="font-family: Arial, sans-serif;">
+                            At Pluronce, we welcome innovators, dreamers, and collaborators. Whether you have a question, a proposal, or just want to learn more about our mission, feel free to reach out.
+                        </p>
                     </div>
-                </div>
-            </nav>
-
-            <!-- Content -->
-            <div class="container py-5">
-                <div class="row justify-content-center">
-            <div class="position-absolute container  py-5 d-flex flex-column align-items-center justify-content-center">
-                <!-- Profile Section -->
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8 text-center text-white">
-                        <!-- Main Heading -->
-                        <div class="mb-4">
-                            <h1 class="color">We'd Love to Hear From You!</h1>
-                            <p style="font-family: Arial, sans-serif;">
-                                At Pluronce, we welcome innovators, dreamers, and collaborators. Whether you have a question, 
-                                a proposal, or just want to learn more about our mission, feel free to reach out.
-                            </p>
-                        </div>
-            
-                        <!-- Horizontal Divider -->
-                        <hr class="bg-white">
-            
-                        <!-- Contact Information -->
-                        <div class="mb-4">
-                            <h1 class="color">Get in Touch</h1>
-                            <p style="font-family: Arial, sans-serif;">
-                                Email: <a href="mailto:pluronce@gmail.com" class="text-white text-decoration-none">pluronce@gmail.com</a><br>
-                                Phone: <a href="tel:+917017505866" class="text-white text-decoration-none">+91 7017505866</a>
-                            </p>
-                        </div>
-            
-                        <!-- Follow Us Section -->
-                        <div>
-                            <h1 class="color mb-3">Follow Us</h1>
-                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-                                <a href="https://x.com/pluroncedotcom" class="text-white" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter "></i></a>
-                                <a href="https://www.instagram.com/pluronce" class="text-white" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram "></i></a>
-                                <a href="https://www.linkedin.com/company/pluronce" class="text-white" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://www.youtube.com/@pluronce" class="text-white" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube "></i></a>
-                                <a href="https://www.facebook.com/profile.php?id=61571195500066" class="text-white" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.threads.net/@pluronce" class="text-white" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
-                            </div>
+                    <hr class="bg-white" />
+                    <div class="mb-4">
+                        <h1 class="color">Get in Touch</h1>
+                        <p style="font-family: Arial, sans-serif;">
+                            Email: <a href="mailto:pluronce@gmail.com" class="text-white text-decoration-none">pluronce@gmail.com</a><br />
+                            Phone: <a href="tel:+917017505866" class="text-white text-decoration-none">+91 7017505866</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="color mb-3">Follow Us</h1>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                            <a href="https://x.com/pluroncedotcom" class="text-white" target="_blank">
+                                <i class="fa-brands fa-twitter fa-2xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/pluronce" class="text-white" target="_blank">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/pluronce" class="text-white" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@pluronce" class="text-white" target="_blank">
+                                <i class="fa-brands fa-youtube fa-2xl"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61571195500066" class="text-white" target="_blank">
+                                <i class="fa-brands fa-facebook fa-2xl"></i>
+                            </a>
+                            <a href="https://www.threads.net/@pluronce" class="text-white" target="_blank">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-        </div>
-
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="https://kit.fontawesome.com/cb50b81f89.js" crossorigin="anonymous"></script>
-        <script src="js/ghost-typer.js"></script>
-        <script>
-            window.onload = function () {
-                document.getElementById('preloader-active').style.display = 'none';
-            };
-        </script>
         
-    </body>
-</html>
