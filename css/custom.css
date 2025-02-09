@@ -1,7 +1,11 @@
 
+            ::-webkit-scrollbar {
+                display: none;
+            }
             /* Preloader */
-            a{
-                text-decoration: none;
+            a{text-decoration: none;}
+            .color{
+                color: aqua !important;
             }
             .preloader {
                 background-color: #f7f7f7;
@@ -50,7 +54,7 @@
 
             /* Fade-in Animation */
             .fadeInzoom {
-                animation: fadeInzoom 2s;
+                animation: fadeInzoom 1s;
             }
 
             @keyframes fadeInzoom {
@@ -75,15 +79,39 @@
                     font-size: 0.9rem;
                 }
             }
-            
+
+
+
+
     @media only screen and (max-width: 500px) {
-        #con{
-            flex-direction:column;
+        .con {
+            flex-direction: column !important;
+            text-align: center;
         }
-        .restagline{
-            margin:0 10%;
+        .restagline {
+            margin: 0 10%;
+            font-size: 180% !important;
+        }
+        #plugin1{
+            font-size: 100% !important;
+        }
+        .homeimg {
+            width: 80%;
+            height: auto;
         }
     }
-    .color{
-        color:#0FBBD9;
+
+    .restagline{
+        font-size:5vw;
     }
+    #plugin1{
+        font-size:2vw;
+    }
+    .detail{
+        color: black;
+        background-color: rgba(200,200,200);
+    }
+
+    
+   
+    
